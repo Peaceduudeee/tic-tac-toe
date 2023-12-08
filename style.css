@@ -8,8 +8,23 @@
     --inner-size: calc(var(--mark-size)*0.7);
 }
 
+@font-face {
+    font-family: my-cool-font;
+    src: url(./fonts/Culture\ Wind.ttf);
+  }
+
 body{
     margin:0;
+    background-color: #816F68;
+}
+.heading{
+    text-align: center;
+    font-weight: 700;
+    font-family: my-cool-font;
+    font-size: 3rem;
+    margin-top: 20px;
+    padding: 15px;
+    margin-bottom: -100px;
 }
 
 .board{
@@ -126,13 +141,14 @@ body{
 .cell.circle::after, .board.circle .cell.cell:not(.x):not(.circle):hover::after {
   width: var(--inner-size);
   height: var(--inner-size);
-  background-color: white;
+  background-color: #816F68;
 }
 
 
 /* button */
 .winning-message{
     display:none;
+    font-family: my-cool-font;
     position: fixed;
     top: 0;
     left: 0;
@@ -146,6 +162,7 @@ body{
     flex-direction: column;
 }
 .winning-message button{
+    font-family: my-cool-font;
     font-size: 3rem;
     background-color:white;
     border:1px solid black;

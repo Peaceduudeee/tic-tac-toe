@@ -2,6 +2,7 @@
 const X_CLASS='x'
 const CIRCLE_CLASS='circle'
 let circleTurn
+const cellElements=document.querySelectorAll('[data-cell]');
 const board=document.getElementById('board');
 const winningMessageElement=document.querySelector('.winning-message')
 const winningMessageTextElement=document.querySelector('.data-winning-message-text')
@@ -27,7 +28,6 @@ restartButton.addEventListener('click', ()=>{
 
 // code to handle click on each cell
 
-const cellElements=document.querySelectorAll('[data-cell]');
 cellElements.forEach(cell=>{
     cell.addEventListener('click', handleClick, {once:true})
 })
